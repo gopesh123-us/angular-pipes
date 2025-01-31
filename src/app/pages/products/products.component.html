@@ -26,4 +26,13 @@
     <li>{{ item.key }} - {{ item.value }}</li>
   </ul>
   {{ person | json }}
+
+  <div class="filtered-array">
+    <h3>Sum of all the numbers in a mixed array:</h3>
+    <p>{{ mixedArray | numberSumFilter }}</p>
+  </div>
+  <div class="truncate-string">
+    <h3>Truncated string:</h3>
+    <p>{{ stringToTruncate | truncate : 7 }}</p>
+  </div>
 </div>

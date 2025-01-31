@@ -8,6 +8,8 @@ import {
 } from '@angular/common';
 import { Component } from '@angular/core';
 import { CapitalizePipe } from '../../core/pipes/capitalize.pipe';
+import { FilterPipe } from '../../core/pipes/filter.pipe';
+import { TruncatePipe } from '../../core/pipes/truncate.pipe';
 
 @Component({
   selector: 'app-products',
@@ -19,12 +21,17 @@ import { CapitalizePipe } from '../../core/pipes/capitalize.pipe';
     NgStyle,
     CommonModule,
     CapitalizePipe,
+    FilterPipe,
+    TruncatePipe,
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })
 export class ProductsComponent {
   subTitle = 'home-products';
+  mixedArray = [1, 2, 5, 6, '9', 20, 'abc', 30, true, false, '90', 100];
+  stringToTruncate =
+    'My name is Gopesh Sharma and I am a full stack Java developer with Angular frontend';
   products = [
     {
       id: 1,
@@ -58,7 +65,7 @@ export class ProductsComponent {
   arr = [20, 30, 40, 50, 60];
   person = {
     name: 'Gopesh Sharma',
-    age: '56',
+    age: '20',
     place: 'Gainesville, VA',
   };
 }

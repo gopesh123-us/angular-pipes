@@ -15,3 +15,18 @@
 .not-available {
   color: red;
 }
+.filtered-array {
+  background-color: aliceblue;
+  padding: 0 10px;
+  border: 1px solid gray;
+  width: 30%;
+  margin-top: 10px;
+}
+.truncate-string {
+  background-color: rgb(7, 150, 150, 0.5);
+  padding: 0 10px;
+  border: 1px solid rgb(7, 150, 150);
+  width: 30%;
+  margin-top: 10px;
+  color: #414040;
+}
