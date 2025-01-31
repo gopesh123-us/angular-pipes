@@ -9,6 +9,7 @@ import {
 import { Component } from '@angular/core';
 import { CapitalizePipe } from '../../core/pipes/capitalize.pipe';
 import { FilterPipe } from '../../core/pipes/filter.pipe';
+import { SumarrayPipe } from '../../core/pipes/sumarray.pipe';
 import { TruncatePipe } from '../../core/pipes/truncate.pipe';
 
 @Component({
@@ -23,13 +24,15 @@ import { TruncatePipe } from '../../core/pipes/truncate.pipe';
     CapitalizePipe,
     FilterPipe,
     TruncatePipe,
+    SumarrayPipe,
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })
 export class ProductsComponent {
   subTitle = 'home-products';
-  mixedArray = [1, 2, 5, 6, '9', 20, 'abc', 30, true, false, '90', 100];
+  mixedArray = [1, 2, 5, 6, '9', 20, 'abc', 30, 'true', false, '90', 100, true];
+  numberArray = [1, 3, 5, 6, 9, 10, 12];
   stringToTruncate =
     'My name is Gopesh Sharma and I am a full stack Java developer with Angular frontend';
   products = [
