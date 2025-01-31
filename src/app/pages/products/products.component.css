@@ -1,0 +1,17 @@
+* {
+  font-family: "Gotu", sans-serif;
+}
+.list-div {
+  width: 1440px;
+  margin: auto;
+}
+.list {
+  list-style: none;
+  background-color: aliceblue;
+}
+.available {
+  color: green;
+}
+.not-available {
+  color: red;
+}
